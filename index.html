@@ -22,6 +22,7 @@
     <h1>LIFE OF<br/><span>ALON</span></h1>
     <p class="t-sub">a day at the pill factory</p>
     <div class="t-actions"><button id="startBtn">PRESS START</button><a id="xLink" href="https://x.com/LifeOfAlon" target="_blank" rel="noopener">Follow <b>@LifeOfAlon</b> on X</a></div>
+    <div class="t-ca"><span class="ca-l">CA</span><code id="caTxt">7KoSQtMe6ZThUL4H4GB8KJaF6A4cioJDvb4QRxPxpump</code><button id="caCopy" type="button">COPY</button></div>
     <div class="t-controls">
       <span><b>WASD</b> move</span><span><b>SHIFT</b> run</span><span><b>DRAG</b> look</span><span><b>E</b> interact</span>
     </div>
@@ -39,5 +40,6 @@
 <section id="computer" class="hidden"><div id="os-root"></div></section>
 
 <script type="module" src="./src/main.js"></script>
+<script>document.getElementById("caCopy").onclick=e=>{e.stopPropagation();navigator.clipboard.writeText("7KoSQtMe6ZThUL4H4GB8KJaF6A4cioJDvb4QRxPxpump");const b=e.currentTarget;b.textContent="COPIED";setTimeout(()=>b.textContent="COPY",1600)};</script>
 </body>
 </html>
